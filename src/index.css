@@ -1,7 +1,68 @@
+.App {
+  display: flex;
+  gap: 10px;
+}
+
+.Stage {
+
+}
+
+.Portfolio {
+  width: 300px;
+}
+.Portfolio ul {
+  padding: 5px;
+}
+.Portfolio li {
+  appearance: none;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 5px;
+  background-color: #EEE;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.Portfolio li.selected {
+  background-color: #CCC;
+}
+
+.Portfolio .title {
+  padding: 10px 20px;
+  flex: 1;
+}
+.Portfolio .delete {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.Portfolio .create {
+  background-color: #DDD;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.Portfolio .title,
+.Portfolio .delete,
+.Portfolio .create {
+  cursor: pointer;
+}
+
 .svg-wrapper {
   border: 1px solid #DDD;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  position: relative;
+}
+.switches {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 button {

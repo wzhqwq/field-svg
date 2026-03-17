@@ -105,4 +105,9 @@ export class DraggableCircles {
     this.circles.push(newCircle)
     this.updateCircles()
   }
+
+  public clean() {
+    this.circles = []
+    this.updateCircles()
+  }
 }

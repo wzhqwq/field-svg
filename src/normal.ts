@@ -89,4 +89,9 @@ export class PointNormalEstimator {
     // Remove old lines
     lines.exit().remove()
   }
+
+  public clean() {
+    this.points = []
+    this.svg.selectAll("line").remove()
+  }
 }
